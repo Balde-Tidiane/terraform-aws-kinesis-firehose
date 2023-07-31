@@ -1,6 +1,7 @@
 output "firehose_delivery_stream" {
   description = "Kinesis Firehose delivery stream towards Observe"
   value       = aws_kinesis_firehose_delivery_stream.this
+  sensitive   = true
 }
 
 output "firehose_iam_policy" {
